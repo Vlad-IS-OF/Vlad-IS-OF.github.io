@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="Tablejs.js"></script>
+    <script>
+        $('.BG_colo').css({ background: "-webkit-gradient(linear, left top, left bottom, from(#4e54c8), to(#8f94fb))" });
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                    $('#HOME').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                    $('#HOME').fadeOut();
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".abo").click(function () {
+                $("About_me").removeClass("dact");
+                $("About_me").addClass("act");
+                $("Foto_me").removeClass("act");
+                $("Foto_me").addClass("dact");
+                $("Contact_me").removeClass("act");
+                $("Contact_me").addClass("dact");
+
+            });
+            $(".fot").click(function () {
+                $("About_me").removeClass("act");
+                $("About_me").addClass("dact");
+                $("Foto_me").removeClass("dact");
+                $("Foto_me").addClass("act");
+                $("Contact_me").removeClass("act");
+                $("Contact_me").addClass("dact");
+
+            });
+            $(".con").click(function () {
+                $("About_me").removeClass("act");
+                $("About_me").addClass("dact");
+                $("Foto_me").removeClass("act");
+                $("Foto_me").addClass("dact");
+                $("Contact_me").removeClass("dact");
+                $("Contact_me").addClass("act");
+
+            });
+        }
+    </script>
+</head>
+
+<body onload="tab_edit('1')">
+    <div class="Al">
+        <table>
+            <caption>
+                <div ALIGN="CENTER"><a href="Index.html">
+                        <FONT COLOR="WHITE" SIZE="15"><B>
+                                На Главную страницу
+                            </B></FONT>
+                    </a>
+                </div>
+            </caption>
+            <thead>
+                <tr>
+                    <th class="but1 selected" onclick="tab_edit('1')">
+                        <center><b>Обо мне!!!</b></center>
+                    </th>
+                    <th class="but2" onclick="tab_edit('2')">
+                        <center><b>Фото достижений!!</b></center>
+                    </th>
+                    <th class="but3" onclick="tab_edit('3')">
+                        <center><b>Форма обратной связи...</b></center>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        <div class="content_me">
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>

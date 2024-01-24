@@ -1,0 +1,319 @@
+.BG_color {
+    background: #74ebd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Класс при навидение меняет цвет текста */
+.but:hover {
+    background-color: #ffffff;
+}
+
+.div_border {
+    text-align: center;
+    color: whitesmoke;
+    background: #00B4DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 3.5em;
+    border-radius: 10%;
+    margin-top: 2%;
+}
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    background: #654ea3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eaafc8, #654ea3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eaafc8, #654ea3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 2.5em;
+}
+
+footer a {
+    font-size: 1em;
+    color: rgba(245, 245, 245, 0.596);
+}
+
+.div_main_content {
+    text-align: left;
+    font-size: 1.5em;
+    font-family: "URW Chancery L";
+    color: rgb(32, 121, 255);
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.f5 {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.addingGrayScale {
+    -webkit-filter: grayscale(1);
+    /* Webkit */
+    filter: gray;
+    /* IE6-9 */
+    filter: grayscale(1);
+    /* W3C */
+}
+
+#toTop {
+    width: 100px;
+    border: 1px solid rgba(204, 204, 204, 0.341);
+    background: #f7f7f76e;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    /* отступ кнопки от нижнего края страницы*/
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    font-family: verdana;
+    font-size: 11px;
+}
+
+#HOME {
+    width: 100px;
+    border: 1px solid rgba(204, 204, 204, 0.341);
+    background: #f7f7f76e;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 20px;
+    /* отступ кнопки от нижнего края страницы*/
+    left: 10px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    font-family: verdana;
+    font-size: 11px;
+}
+
+.Al table {
+    width: 54%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    border-collapse: separate;
+    white-space-collapse: collapse;
+    border-spacing: 2px;
+}
+
+.Al table caption {
+    background-color: rgb(178, 255, 128);
+    border: 1px solid black;
+    text-align: center;
+    font: bold 20px/120% Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Al table thead {
+    background-color: rgb(178, 255, 128);
+}
+
+.Al table th {
+    border: 1px solid black;
+    width: 33%;
+}
+
+.Al table th:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgb(255, 160, 207);
+}
+
+.Al table th.selected {
+    background-color: red;
+    background-color: rgb(255, 160, 207);
+}
+
+.Al table td {
+    background-color: rgb(178, 255, 128);
+    border: 1px solid black;
+    text-align: center;
+}
+
+.text1 {
+    display: block;
+    margin: 0 auto;
+    font: bold 20px/120% Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 60%;
+    word-break: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text2 img{
+    border: none;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 0 30px 30px;
+    float: left;
+}
+
+svg {
+    height: 23rem;
+    margin-right: 4rem;
+}
+
+#envelope {
+    animation: float 2s ease-in-out infinite;
+}
+
+#star1,
+#star2,
+#star3,
+#star4,
+#star5,
+#star6 {
+    animation: blink 1s ease-in-out infinite;
+}
+
+#star2 {
+    animation-delay: 100ms;
+}
+
+#star3 {
+    animation-delay: 500ms;
+}
+
+#star4 {
+    animation-delay: 700ms;
+}
+
+#star5 {
+    animation-delay: 300ms;
+}
+
+#star6 {
+    animation-delay: 200ms
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    height: 100vh;
+}
+
+form {
+    min-width: 25rem;
+
+    .title {
+        font-family: 'Pacifico', cursive;
+        color: #212529;
+        font-size: 2.5rem;
+    }
+
+    .form-control {
+        background-color: #f2f6f8;
+        border-radius: 2rem;
+        border: none;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+
+        &.thick {
+            height: 3.3rem;
+            padding: .5rem 3.5rem;
+        }
+
+        &:focus {
+            background-color: #f2f6f8;
+            border: none;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+        }
+    }
+
+    .message .form-control {
+        padding: .5rem 1.8rem;
+    }
+
+    ::placeholder {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #838788;
+        position: relative;
+        left: 0;
+    }
+
+    input,
+    textarea {
+        font-family: 'Quicksand', sans-serif;
+        color: #212529;
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        color: #57565c;
+        height: 1.3rem;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.1rem;
+    }
+}
+
+.btn.btn-primary {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-image: linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
+}
